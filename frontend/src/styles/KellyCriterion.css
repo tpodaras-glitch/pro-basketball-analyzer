@@ -1,0 +1,75 @@
+/* Kelly Criterion Calculator */
+.kelly-calculator {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.kelly-calculator h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.input-group input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-group span {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.results {
+  background: #f7fafc;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #667eea;
+  margin-top: 20px;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.result-item span {
+  color: #666;
+}
+
+.result-item strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.result-item.highlight {
+  background: #c6f6d5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.result-item.highlight strong {
+  color: #22543d;
+  font-size: 16px;
+}

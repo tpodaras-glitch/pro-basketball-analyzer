@@ -1,0 +1,108 @@
+/* Analysis Page */
+.analysis-page {
+  color: white;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+.game-header p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.team-stats,
+.prediction,
+.detailed-analysis {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.team-stats h2,
+.prediction h2,
+.detailed-analysis h2 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.stats-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.team {
+  background: #f7fafc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.team h3 {
+  margin: 0 0 10px 0;
+  color: #667eea;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.prediction-content p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.matchups,
+.trends {
+  margin-bottom: 20px;
+}
+
+.matchup {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.position {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.advantage {
+  font-weight: 600;
+}
+
+.advantage.home {
+  color: #22543d;
+}
+
+.advantage.away {
+  color: #c53030;
+}
+
+.trend {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}

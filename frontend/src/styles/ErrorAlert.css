@@ -1,0 +1,11 @@
+/* Error Alert */
+.error-alert {
+  background: #fed7d7;
+  color: #c53030;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

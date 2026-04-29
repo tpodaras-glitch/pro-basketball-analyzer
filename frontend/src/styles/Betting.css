@@ -1,0 +1,28 @@
+/* Betting Page */
+.betting-page {
+  color: white;
+}
+
+.betting-page h1 {
+  margin: 0 0 30px 0;
+  font-size: 32px;
+}
+
+.betting-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .betting-container {
+    grid-template-columns: 1fr;
+  }
+}

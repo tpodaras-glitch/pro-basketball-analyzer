@@ -1,0 +1,89 @@
+/* Game Card */
+.game-card {
+  display: block;
+  text-decoration: none;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.team {
+  flex: 1;
+  text-align: center;
+}
+
+.team-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.vs {
+  padding: 0 10px;
+  color: #999;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.game-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.date {
+  margin: 0;
+  font-size: 13px;
+  color: #999;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #667eea;
+  color: white;
+}
+
+.status.live {
+  background: #f56565;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.odds-info {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #666;
+}

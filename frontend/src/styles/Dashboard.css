@@ -1,0 +1,155 @@
+/* Dashboard Styles */
+.dashboard {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.dashboard-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.dashboard-header p {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.stats-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.games-list,
+.value-bets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.game-item,
+.value-bet-item {
+  padding: 15px;
+  background: #f7fafc;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-item span,
+.value-bet-item span {
+  display: flex;
+  align-items: center;
+}
+
+.status {
+  background: #667eea;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.value-bet-item {
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.bet-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bet-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.ev-badge {
+  background: #c6f6d5;
+  color: #22543d;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.probabilities {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
