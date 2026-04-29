@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+    depends_on:
+      - backend
+
+  # Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=sqlite:./database/basketball.db
+      - PYTHON_SERVICE_URL=http://analytics:5001
+    volumes:
+      - ./database:/app/database
+    depends_on:
+      - analytics
+
+  # Analytics Engine
+  analytics:
+    build:
+      context: ./analytics
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      - PYTHON_ENV=production
+      - DB_PATH=/data/basketball.db
+    volumes:
+      - ./database:/data
+
+volumes:
+  database:
