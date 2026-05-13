@@ -51,7 +51,6 @@ const ValueBetsPage = () => {
             <option value="all">All Leagues</option>
             <option value="nba">NBA</option>
             <option value="gbl">Greek League</option>
-            <option value="elite">Elite Group</option>
           </select>
         </div>
 
