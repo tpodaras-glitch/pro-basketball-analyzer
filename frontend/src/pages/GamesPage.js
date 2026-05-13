@@ -36,7 +36,6 @@ const GamesPage = () => {
         <select value={league} onChange={(e) => setLeague(e.target.value)}>
           <option value="nba">NBA</option>
           <option value="gbl">Greek League</option>
-          <option value="elite">Elite Group</option>
         </select>
 
         <select value={status} onChange={(e) => setStatus(e.target.value)}>
