@@ -22,7 +22,12 @@ const Dashboard = () => {
           betsAPI.getStats(),
         ]);
 
-        setTodayGames(gamesRes.data.data || []);
+        // Filter out Elite League games
+        const filteredGames = (gamesRes.data.data || []).filter(
+          game => game.league !== 'elite'
+        );
+
+        setTodayGames(filteredGames);
         setValueBets(valueBetsRes.data.data || []);
         setStats(statsRes.data.data);
       } catch (err) {
